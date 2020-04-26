@@ -1,2 +1,3 @@
 # Corona Tracker from API
-Visit Website : https://corona.anwholesquare.xyz
+![Corona Updates](master/corona.png)
+Visit Website : http://corona.anwholesquare.xyz
