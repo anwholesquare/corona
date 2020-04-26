@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 50px 0;
+  width: 80%;
 }
 
 .card {
@@ -10,15 +11,54 @@
 }
 
 .infected {
-  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5) !important;
 }
 
 .recovered{
-  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5) !important;
 }
 
 .deaths{
-  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5) !important;
+}
+
+.rootmaker3{
+  background-image: linear-gradient(to right, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-position : 0 0;
+  box-shadow: inset 0 0 5em rgba(0,0,0,.5);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: gradients;
+  background-size : 600%;
+  }
+
+.rootmaker2{
+background-image: linear-gradient(to right,#2b580c 0%, #56ab2f  50%, #a8e063 100%);
+background-position : 0 0;
+box-shadow: inset 0 0 5em rgba(0,0,0,.5);
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-name: gradients;
+background-size : 600%;
+}
+
+.rootmaker1{
+  background-image: linear-gradient(to right, #142850 0%, #27496d 33%, #00909e 66%, #dae1e7 100% );
+  background-position : 0 0;
+  box-shadow: inset 0 0 5em rgba(0,0,0,.5);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: gradients;
+  background-size : 600%;
+}
+  
+@keyframes gradients {
+0%   {background-position: 0 0;}
+25% {background-position: 50% 0;}
+50% {background-position: 90% 0;}
+60% {background-position: 60%;}
+75% {background-position: 40%;}
+100%  {background-position: 0 0;}
 }
 
 @media only screen and (max-width: 770px) {

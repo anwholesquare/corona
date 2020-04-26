@@ -30,9 +30,12 @@ class App extends React.Component {
     return (
       <div className={styles.container}>
         <img className={styles.image} src={image} alt="COVID-19" />
-        <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
+        <Cards data={data} />
         <Chart data={data} country={country} /> 
+        <center style={{padding:20}}>
+        Made With <span class="heart"> ❤ </span> By <a href="http://anwholesquare.xyz/">AnWholeSquare</a>
+        </center>
       </div>
     );
   }

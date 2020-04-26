@@ -13,10 +13,10 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   return (
     <div className={styles.container}>
       <Grid container spacing={3} justify="center">
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected, styles.rootmaker1)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
-              Infected
+            <Typography color="textSecondary" gutterBottom style={{fontSize: 30}}> 
+              Cases
             </Typography>
             <Typography variant="h5" component="h2">
               <CountUp start={0} end={confirmed.value} duration={2.75} separator="," />
@@ -25,13 +25,13 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
-              Number of active cases of COVID-19.
+              Number of active cases
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered, styles.rootmaker2)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" gutterBottom style={{fontSize: 30}}>
               Recovered
             </Typography>
             <Typography variant="h5" component="h2">
@@ -41,13 +41,13 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
-              Number of recoveries from COVID-19.
+              Number of recoveries
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths, styles.rootmaker3)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" gutterBottom style={{fontSize: 30}}>
               Deaths
             </Typography>
             <Typography variant="h5" component="h2">
