@@ -5,6 +5,13 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 
 import image from './images/image.png';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+
 
 class App extends React.Component {
   state = {
@@ -28,6 +35,9 @@ class App extends React.Component {
     const { data, country } = this.state;
 
     return (
+      <Router>
+        <Switch>
+        <Route path="/*">
       <div className={styles.container}>
         <img className={styles.image} src={image} alt="COVID-19" />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
@@ -37,6 +47,9 @@ class App extends React.Component {
         Made With <span class="heart"> ❤ </span> By <a href="http://anwholesquare.xyz/">AnWholeSquare</a>
         </center>
       </div>
+        </Route>
+      </Switch>
+      </Router>
     );
   }
 }
