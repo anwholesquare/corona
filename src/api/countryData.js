@@ -1,0 +1,1 @@
+export default {"confirmed":{"value":5416,"detail":"https://covid19.mathdro.id/api/countries/bangladesh/confirmed"},"recovered":{"value":122,"detail":"https://covid19.mathdro.id/api/countries/bangladesh/recovered"},"deaths":{"value":145,"detail":"https://covid19.mathdro.id/api/countries/bangladesh/deaths"},"lastUpdate":"2020-04-26T23:30:31.000Z"};
